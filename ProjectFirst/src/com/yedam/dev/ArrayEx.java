@@ -13,9 +13,9 @@ public class ArrayEx {
 		int result = sumAry(intAry);
 		System.out.println(result);
 		
-		double
-		double result2
-		
+//		double
+//		double result2
+//		
 		String[] strAry = {"Hello", "World", "Nice","10"}; //배열은 모든 타입을 사용 할수 있지만 동시에 다른 타입을 사용 할수 없다. 그래서 10을 ""에 담아서 표현함.
 		for(int i=0; i<strAry.length; i++) {
 			System.out.println(strAry[i]);
