@@ -47,7 +47,26 @@ public class StudentExample {
 			} 
 			System.out.println(stud.name + "/ " + stud.age);//만들어진 각 인스턴스의 이름과 나이만 보도록
 		}
+		//5월 11일
+		Student a1 = new Student();
+		a1.name = "Hong";
+		a1.age = 20;
+		a1.major = "English";
 		
+		
+		Student s2 = new Student("Park"); //s2.name="Park"를 굳이 쓸필요 없다. 필드의 초기값을 "Park"으로 선언
+		s2.age = 22;
+		s2.major = "History";
+		
+		Student s3 = new Student("Choi", 25);
+		s3.major = "Math";
+		
+		Student[] students = new Student[5];
+		students[0] = a1;
+		students[1] = new Student();
+		students[2] = s2;
+		students[3] = s3;
+		students[4] = new Student();
 		
 	} // 내가 만든 클래스가 결과를 만들 수 있게 만들었다.
 }
