@@ -66,16 +66,29 @@ public class AddressBookExample {
 				}
 			} else if (menu == 2) {
 				System.out.println("주소록 리스트");
-				for(int i=0; i<frns.length; i++) {
-					if(frns[i] != null) {
+				for (int i = 0; i < frns.length; i++) {
+					if (frns[i] != null) {
 						frns[i].ShowInfo();
+						System.out.println("-----------------");
 					}
 				}
-			}
-			
-			
-			
-			else if (menu == 4) {
+			} else if (menu == 3) {
+				System.out.println("이름조회");
+				System.out.println("이름을 입력하세요");
+				String name = scn.nextLine();
+				for (Friends search : frns) {
+					if (search != null && search.getName().equals(name)) {
+						search.ShowInfo();
+					}
+				}
+			} /*else if (menu == 4) {
+				System.out.println("학과조회");
+				System.out.println("학과를 입력하세요");
+				String major = scn.nextLine();
+				for (Friends search : frns) {
+					if(search != null && search.getMajor().equals(major)) {
+				}
+			}*/ else if (menu == 4) {
 				System.out.println("종료 선택");
 				break;
 			}
