@@ -37,7 +37,7 @@ public class AccountExample {
 							           ", 잔액: "+acc.getBalance()); //if(acc != null)조건이 없으면 배열 안에서 null이 있는 공간 때문에 null point exception이라는 오류 뜸 그래서, if(acc != null) 써준다
 					}
 				}
-			} else if (menu==3 ) {
+			} else if (menu==3) {
 				System.out.println("예금 선택");
 				System.out.println("계좌번호 입력하세요");
 				String ano = scn.nextLine();
