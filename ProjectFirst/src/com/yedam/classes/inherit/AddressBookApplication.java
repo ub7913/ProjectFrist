@@ -73,10 +73,16 @@ public class AddressBookApplication {
 			if (search != null && search.getName().equals(name)) {
 				search.ShowInfo();
 			} 
-		}
-		System.out.println("리스트에 없습니다");
+		}	
 	}
 	
+//	private Friends findList(String name) {
+//		for (Friends search : frns) {
+//			if (search != null && search.getName().equals(name)) {
+//				search.ShowInfo();
+//			}
+//		}
+//	}System.out.println("리스트에 없습니다"); ->질문
 	public void execute() {
 		while (true) {
 			System.out.println("-----------------------------------");
