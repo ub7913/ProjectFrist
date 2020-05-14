@@ -69,11 +69,15 @@ public class AddressBookApplication {
 		System.out.println("이름조회");
 		System.out.println("이름을 입력하세요");
 		String name = scn.nextLine();
+		int a = 0;
 		for (Friends search : frns) {
 			if (search != null && search.getName().equals(name)) {
 				search.ShowInfo();
+				a=1;
 			} 
-		}	
+		} if(a == 0) {
+			System.out.println("해당 이름이 없습니다");
+		}
 	}
 	
 //	private Friends findList(String name) {
