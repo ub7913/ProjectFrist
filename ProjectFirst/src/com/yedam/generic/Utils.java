@@ -7,7 +7,7 @@ public class Utils {
 		return null;
 	}
 	
-	public static <K, V> boolean compare(Pair<K,V> p1, Pair<K,V> p2) {
+	public static <K, V> boolean compare(Pair<K,V> p1, Pair<K,V> p2) { //메소드에서 바로 쓸때
 		boolean keyComp = p1.getKey().equals(p2.getKey());
 		boolean valComp = p1.getValue().equals(p2.getValue());
 		return keyComp && valComp;
