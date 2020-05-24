@@ -45,6 +45,4 @@ public class Employee { //클래스 정의
 		return "Employee [employeeId=" + employeeId + ", lastName=" + lastName + ", salary=" + salary + ", hireDate="
 				+ hireDate + "]";
 	}
-	
-	
 }

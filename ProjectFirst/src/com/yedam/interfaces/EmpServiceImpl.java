@@ -2,7 +2,6 @@ package com.yedam.interfaces;
 
 public class EmpServiceImpl implements EmpService {
 	EmpDAO dao = new EmpDAO();
-	
 
 	@Override
 	public void createEmp(Employee emp) {

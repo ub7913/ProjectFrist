@@ -11,4 +11,10 @@ public class Cat extends Animal {
 		System.out.println("야옹");
 	}
 	//public abstract void eat();//추상 메소드는 추상 클래스에서만 사용 할 수있다.
+
+	@Override
+	public void kind() {
+		System.out.println("고양이");
+		
+	}
 }

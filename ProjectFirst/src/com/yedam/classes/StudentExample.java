@@ -67,6 +67,8 @@ public class StudentExample {
 		students[2] = s2;
 		students[3] = s3;
 		students[4] = new Student();
-		
+		for (Student aa:students) {
+			System.out.println(aa.name + aa.age+aa.major);
+		}
 	} // 내가 만든 클래스가 결과를 만들 수 있게 만들었다.
 }
