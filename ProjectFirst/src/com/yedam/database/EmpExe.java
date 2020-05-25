@@ -8,13 +8,14 @@ public class EmpExe {
 		emp.setSalary(3000);
 		
 		dao.insertEmp(emp);
-//		Employee[] employees = dao.getEmpList();
-//		for (Employee emp : employees) {
-//			if (emp != null) {
-//				System.out.println(emp.toString());
-//			}
-//		}
-//			dao.getEmpList();
+		
+		Employee[] employees = dao.getEmpList();
+		for (Employee emp1 : employees) {
+			if (emp1 != null) {
+				System.out.println(emp1.toString());
+			}
+		}
+			dao.getEmpList();
 	}
 }
 //에러뜸 , 실행된 창에서 마지막과 마지막 위 오류 찾아봄

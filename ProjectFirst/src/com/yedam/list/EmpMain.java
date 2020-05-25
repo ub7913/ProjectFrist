@@ -1,4 +1,4 @@
-package com.yedam.interfaces;
+package com.yedam.list;
 
 import java.io.IOException;
 import java.util.Scanner;

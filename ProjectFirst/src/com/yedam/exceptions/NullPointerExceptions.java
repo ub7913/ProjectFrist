@@ -1,6 +1,6 @@
 package com.yedam.exceptions;
 
-public class NullPointerExceptions {
+public class NullPointerExceptions { // 읽어올수 없는 값이 없을때(null일때)발생하는 예외,실행예외
 	public static void main(String[] args) {
 		String str = "Hello";
 		try {//예외처리 해준다. 오류가 있으면 메시지를 출력해주고 정상적으로 끝까지 실행된다

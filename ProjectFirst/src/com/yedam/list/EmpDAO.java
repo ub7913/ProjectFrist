@@ -1,12 +1,10 @@
-package com.yedam.interfaces;
+package com.yedam.list;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class EmpDAO { // db처리
 	Connection conn = null; //자바의 sql클래스라서 import필요
@@ -41,37 +39,10 @@ public class EmpDAO { // db처리
 		}
 	}// end of insertEmp
 	
-
-	
-//	public Employee[] getEmpList() {
-//		conn = getConnect();
-//		String sql = "select * from emp";
-//		Employee[] employees = new Employee[100]; //Employee 타입
-//		int i = 0;
-//		
-//		try {
-//			pstmt = conn.prepareStatement(sql);
-//			ResultSet rs = pstmt.executeQuery();
-//			while(rs.next()) {//들어있는 건수 만큼 배열에 담는다.
-//				Employee emp = new Employee(rs.getInt("employee_id")//
-//						,rs.getString("last_name")//
-//						,rs.getInt("salary")//
-//						,rs.getString("hire_date")//
-//				);
-//				employees[i++] = emp;
-//			}
-//			
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//		
-//		return employees;
-//	}// end of empList
-	
-	public List<Employee> getEmpList() {
+	public Employee[] getEmpList() {
 		conn = getConnect();
 		String sql = "select * from emp";
-		List<Employee> employees = new ArrayList<>(); //Employee 타입
+		Employee[] employees = new Employee[100]; //Employee 타입
 		int i = 0;
 		
 		try {
@@ -83,7 +54,7 @@ public class EmpDAO { // db처리
 						,rs.getInt("salary")//
 						,rs.getString("hire_date")//
 				);
-				employees.add(emp);
+				employees[i++] = emp;
 			}
 			
 		} catch (SQLException e) {
