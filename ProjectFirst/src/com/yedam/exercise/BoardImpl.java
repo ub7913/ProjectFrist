@@ -11,7 +11,7 @@ public class BoardImpl implements BoardService {
 
 	@Override
 	public void updateBoard(List<Board> list, Board board) {
-
+		
 	}
 
 	@Override

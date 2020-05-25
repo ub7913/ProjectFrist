@@ -15,19 +15,19 @@ public class Board {
 		this.name=name;
 	}
 
-	public String getSubtitle() {
+	public String getTitle() {
 		return title;
 	}
 
-	public void setSubtitle(String subtitle) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 
-	public String getContents() {
+	public String getContent() {
 		return content;
 	}
 
-	public void setContents(String content) {
+	public void setContent(String content) {
 		this.content = content;
 	}
 
@@ -41,7 +41,8 @@ public class Board {
 
 	@Override
 	public String toString() {
-		return "Board [title=" + title + ", content=" + content + ", name=" + name + "]";
+//		for (int i = 0; i<100; i++) {
+		return "게시글목록[제목=" + title + ", 내용=" + content + ", 작성자=" + name + "]";
+		//}
 	}
-	
 }
