@@ -2,7 +2,7 @@ package com.yedam.exercise;
 
 import java.util.List;
 
-public class BoardImpl implements BoardService {
+public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public void insertBoard(List<Board> list, Board board) {

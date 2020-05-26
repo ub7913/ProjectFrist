@@ -11,7 +11,7 @@ public class BoardMain {
 		Scanner scn = new Scanner(System.in);
 		List<Board> list = new ArrayList<>();
 
-		BoardService service = new BoardImpl();
+		BoardService service = new BoardServiceImpl();
 		while (true) {
 			System.out.println("===================================");
 			System.out.println("1.입력  2.수정  3.삭제  4.리스트 5.종료");

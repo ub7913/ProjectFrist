@@ -1,4 +1,4 @@
-package com.yedam.classes;
+package com.yedam.classes.morning;
 
 public class Code20200515 {
 	public static void main(String[] args) {
@@ -24,18 +24,24 @@ public class Code20200515 {
 			}System.out.println();
 		}*/
 		
-		int number[][] = {
-				{1,6,11,16,21},
-				{2,7,12,17,22},
-				{3,8,13,18,23},
-				{4,9,14,19,24},
-				{5,10,15,20,25}
-		};
+//		int number[][] = {
+//				{1,6,11,16,21},
+//				{2,7,12,17,22},
+//				{3,8,13,18,23},
+//				{4,9,14,19,24},
+//				{5,10,15,20,25}
+//		};
+//		for (int i=0; i<number.length; i++) {
+//			for (int j=0; i<number[i].length; j++) {
+//				System.out.print(number[i][j]+" ");
+//			}
+//			System.out.println();
+//		}
+		
+		int number[][] = new int[5][5];
+		
 		for (int i=0; i<number.length; i++) {
-			for (int j=0; i<number[i].length; j++) {
-				System.out.print(number[i][j]+" ");
-			}
-			System.out.println();
+			for(int j=0; j<number[].length; j++)
 		}
 	}
 }
